@@ -21,9 +21,16 @@
     <%= form.label :forename %>
     <%= form.text_field :forename, class: "form-control" %>
 
+    <%# The Label shows a surname - the textfield shows middlename%>
+    <%# The form is missing a set of middlename & surname %>
+
     <p>
       <%= form.label :surname %>
       <%= form.text_field :middlename, class: "form-control" %>
+
+      <%= form.label :surname %>
+      <%= form.text_field :surname, class: "form-control" %>
+    
     </p>
 
     <p>

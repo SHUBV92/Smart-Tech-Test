@@ -8,7 +8,8 @@ class CompaniesController < ApplicationController
 
   def show
     @company = Company.find(permitted_params[:id])
-    @company = Company.first
+    # This line is the first Error - It always shows the first element of the comapanies array
+    # @company = Company.first
   end
 
   def new

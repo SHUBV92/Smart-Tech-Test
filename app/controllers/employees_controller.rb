@@ -14,7 +14,8 @@ class EmployeesController < ApplicationController
     @employee = @company.employees.build
   end
 
-  def edit; end
+  def edit; 
+  end
 
   def create
     @employee = @company.employees.build(permitted_params[:employee])
